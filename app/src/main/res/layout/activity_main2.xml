@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/videoView"
+        android:layout_width="512px"
+        android:layout_height="512px"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/halo"
+        android:layout_gravity="center"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/yelow">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yelow">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:layout_marginBottom="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Selamat Datang Di Aplikasi Kami yang Memuat Data Dari Dictionary API, Di Dalam Aplikasi Memuat Definisi, Sinonim, dan Antonim dalam Bahasa Inggris "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:onClick="btn_start"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Start Application"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>
